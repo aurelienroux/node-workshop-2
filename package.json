@@ -4,6 +4,9 @@
   "description": "require json file with try catch",
   "main": "request-as-json.js",
   "dependencies": {
+    "colors": "^1.1.2",
+    "node-emoji": "^1.5.1",
+    "prompt": "^1.0.0",
     "request": "^2.79.0"
   },
   "devDependencies": {},
