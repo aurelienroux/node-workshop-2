@@ -1,0 +1,23 @@
+{
+  "name": "requestjson",
+  "version": "1.0.0",
+  "description": "require json file with try catch",
+  "main": "request-as-json.js",
+  "dependencies": {
+    "request": "^2.79.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aurelienroux/node-workshop-2.git"
+  },
+  "author": "Aurelien",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aurelienroux/node-workshop-2/issues"
+  },
+  "homepage": "https://github.com/aurelienroux/node-workshop-2#readme"
+}
