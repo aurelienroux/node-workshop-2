@@ -1,6 +1,7 @@
 var prompt = require("prompt");
 var requestJSON = require('./library/request-json');
-
+var colors = require("colors");
+var emoji = require("node-emoji");
 
 prompt.start();
 prompt.get("userLocation", function (err, userResult) {
@@ -19,10 +20,10 @@ prompt.get("userLocation", function (err, userResult) {
                         console.log("this is weather app error" + errReqTwo);
                     } else {
                         var dailyWeatherData = resultReqTwo.daily.data;
-                        console.log("Weather is actually " + resultReqTwo.currently.summary);
-                        dailyWeatherData.forEach(function(ele, index){
-                            console.log("in " + (index+1) + " days, weather will be " + ele.icon);
-                        });
+                        console.log("Weather is actually ".america + resultReqTwo.currently.summary);
+                        for(var i = 0; i < 5;i++){
+                            console.log("In " + (i+1) + " days, weather will be " + dailyWeatherData[i].icon.rainbow);
+                        }
                     }
                 });//end of weather request
             }
